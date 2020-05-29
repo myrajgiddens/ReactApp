@@ -11,13 +11,14 @@ import './App.css';
 class App extends React.Component {
   render(){
     return (
-     <header>
-       <form id="to-do-form">
-        <input type="text" placeholder="What will you do next?"/>
-        <button>Add to-do</button>
-       </form>
-        
-      </header>
+      <div className="App">
+        <header>
+          <form id="to-do-form">
+            <input type="text" placeholder="What will you do next?"/>
+            <button type="submit">Add to-do</button>
+          </form>
+        </header>
+      </div>
     );
   }
 }
