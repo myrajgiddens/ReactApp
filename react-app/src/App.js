@@ -18,6 +18,22 @@ class App extends React.Component {
         key:''
       }
     }
+    this.handleInput = this.handleInput.bind(this);
+    this.addItem = this.addItem.bind(this);
+  }
+  handleInput(e){
+    this.setState({
+      currentItem: {
+        text: e.target.value,
+        key: Date.now()
+      }
+    })
+  }
+  addItem(e){
+    e.preventDefault();
+    const newItem = this.state.currentItem;
+    console.log(newItem);
+
   }
   render(){
     return (
@@ -26,7 +42,7 @@ class App extends React.Component {
           <form id="to-do-form" onSubmit={this.addItem}>
             <input type="text" placeholder="What will you do next?"
             value={this.state.currentItem.text}
-            onChange={this.handleInput/>
+            onChange={this.handleInput}/>
             <button type="submit">Add to-do</button>
           </form>
         </header>
