@@ -14,8 +14,10 @@ class App extends React.Component {
      <header>
        <form id="to-do-form">
         <input type="text" placeholder="What will you do next?"/>
-        </form>
-        </header>
+        <button>Add to-do</button>
+       </form>
+        
+      </header>
     );
   }
 }
