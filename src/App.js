@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+
 import TodoInput from './components/TodoInput';
 import TodoList from './components/TodoList';
+import Navigation from './components/Navigation';
 
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {v1 as uuid} from "uuid";
-
-
-
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -78,9 +77,7 @@ class App extends Component {
           </h3> 
           <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
          
-         
-
-          {/* <FontAwesomeIcon icon={faHome} /> */}
+        
             <TodoInput item={this.state.item} 
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
@@ -97,6 +94,10 @@ class App extends Component {
     );
   }
 }
+
+
+
+
 
 
 export default App;
