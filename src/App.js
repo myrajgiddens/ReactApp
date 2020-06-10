@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import TodoInput from './components/TodoInput';
 import TodoList from './components/TodoList';
-import Navigation from './components/Navigation';
+
 
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -70,6 +70,7 @@ class App extends Component {
  
   render() {
     return (
+      
       <div className="container">
         <div className="row">
          <div className="col-10 mx-auto col-md-8 mt-4">
