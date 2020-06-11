@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const MainPage = () => {
     return (
         <div>
-            <h3>welcome to the main page</h3>
+            <h3>Welcome to the Main Page!</h3>
             <Link to="/contact">Contact</Link>
         </div>
     );
