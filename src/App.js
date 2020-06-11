@@ -2,14 +2,17 @@ import React, { Component } from 'react';
 
 import TodoInput from './components/TodoInput';
 import TodoList from './components/TodoList';
-import { BrowserRouter as Router, Route, Switch, Link, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
+import MainPage from './components/index.jsx';
+import ContactPage from './components/Contact';
 // import { faHome } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {v1 as uuid} from "uuid";
 
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 // import uuid from 'uuid';
 class App extends Component {
   state={
@@ -73,7 +76,7 @@ class App extends Component {
       <div>
         <Router>
           <Switch>
-            <Route exact path="/" component={App} />
+            <Route exact path="/" component={MainPage} />
             <Route exact path="/contact" component={ContactPage} />
           </Switch>
         </Router>
